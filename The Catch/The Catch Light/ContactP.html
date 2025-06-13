@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Catch - Contact</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background-color: #f9f9f9;
+      color: #111;
+      font-family: 'Georgia', serif;
+    }
+
+    header {
+      background-color: #eeeeee;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ccc;
+    }
+
+    header h1 {
+      font-size: 2rem;
+    }
+
+    header h1 a {
+      color: #000;
+      text-decoration: none;
+    }
+
+    nav a {
+      color: #444;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+
+    nav a:hover {
+      color: #000;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+      max-width: 600px;
+    }
+
+    a.email-link {
+      color: #5560d1;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a.email-link:hover {
+      text-decoration: underline;
+    }
+
+    .quote {
+      color: #666;
+      font-style: italic;
+      margin-top: 3rem;
+      font-size: 0.95rem;
+    }
+
+    form {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    input[type="email"] {
+      padding: 0.6rem 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      background-color: #fff;
+      color: #111;
+      width: 300px;
+      font-family: 'Georgia', serif;
+    }
+
+    button[type="submit"] {
+      padding: 0.6rem 1.5rem;
+      background-color: #5560d1;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-family: 'Georgia', serif;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #3f49a3;
+    }
+
+    footer {
+      background-color: #eeeeee;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #111;
+      padding: 3rem 0;
+      border-top: 1px solid #ccc;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    footer p {
+      margin: 0.5rem 0;
+      width: 100%;
+      text-align: center;
+    }
+
+    footer a {
+      color: #5560d1;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><a href="index.html">The Catch</a></h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="AboutP.html">About</a>
+      <a href="ChaptersP.html">Chapters</a>
+      <a href="ContactP.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Contact</h2>
+    <p>If you have questions, suggestions, or just want to say hi, feel free to reach out</p>
+    <p>Email: <a class="email-link" href="mailto:contactmeca3kie@gmail.com">contactmeca3kie@gmail.com</a></p>
+
+    <p class="quote">"Sometimes, silence is just a message waiting to be heard."</p>
+  </main>
+
+  <form action="https://formspree.io/f/mpwrakey" method="POST">
+    <input 
+      type="email" 
+      name="email" 
+      placeholder="Enter your email to get updates" 
+      required>
+
+    <button type="submit">Subscribe</button>
+  </form>
+
+  <br><br><br>
+
+  <footer>
+    <p>&copy; 2025 Ca3kie – All rights reserved.</p>
+    <p>
+      For more details, email:
+      <a href="mailto:contactmeca3kie@gmail.com">contactmeca3kie@gmail.com</a>
+    </p>
+  </footer>
+</body>
+</html>

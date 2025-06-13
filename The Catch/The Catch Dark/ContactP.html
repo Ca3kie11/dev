@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Catch - Contact</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background-color: #111;
+      color: #eee;
+      font-family: 'Georgia', serif;
+    }
+
+    header {
+      background-color: #1a1a1a;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #333;
+    }
+
+    header h1 {
+      font-size: 2rem;
+    }
+
+    header h1 a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    nav a {
+      color: #ccc;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+      max-width: 600px;
+    }
+
+    a.email-link {
+      color: #a091ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a.email-link:hover {
+      text-decoration: underline;
+    }
+
+    .quote {
+      color: #888;
+      font-style: italic;
+      margin-top: 3rem;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      background-color: #000;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #fff;
+      padding: 3rem 0;
+      border-top: 1px solid #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    footer p {
+      margin: 0.5rem 0;
+      width: 100%;
+      text-align: center;
+    }
+
+    footer a {
+      color: #a091ff;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1><a href="index.html">The Catch</a></h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="AboutP.html">About</a>
+      <a href="ChaptersP.html">Chapters</a>
+      <a href="ContactP.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Contact</h2>
+    <p>If you have questions, suggestions, or just want to say hi, feel free to reach out</p>
+    <p>Email: <a class="email-link" href="mailto:contactmeca3kie@gmail.com">contactmeca3kie@gmail.com</a></p>
+
+    <p class="quote">"Sometimes, silence is just a message waiting to be heard."</p>
+  </main>
+
+  <form action="https://formspree.io/f/mpwrakey" method="POST" style="margin-top: 2rem; display: flex; flex-direction: column; align-items: center; gap: 1rem;">
+    <input 
+      type="email" 
+      name="email" 
+      placeholder="Enter your email to get updates" 
+      required 
+      style="padding: 0.6rem 1rem; border: 1px solid #444; border-radius: 6px; background-color: #222; color: #eee; width: 300px; font-family: 'Georgia', serif;">
+
+    <button 
+      type="submit" 
+      style="padding: 0.6rem 1.5rem; background-color: #a091ff; color: #111; border: none; border-radius: 6px; cursor: pointer; font-family: 'Georgia', serif;"
+    >
+      Subscribe
+    </button>
+  </form>
+
+  <button onclick="toggleTheme()">🌓 Switch Theme</button>
+
+<script>
+  function toggleTheme() {
+    document.body.classList.toggle("light-theme");
+  }
+</script>
+
+<style>
+  .light-theme {
+    background-color: #fff;
+    color: #000;
+  }
+</style>
+
+  <br>
+  <br>
+  <br>
+
+  <footer>
+    <p>&copy; 2025 Ca3kie – All rights reserved.</p>
+    <p>
+      For more details, email:
+      <a href="mailto:contactmeca3kie@gmail.com">contactmeca3kie@gmail.com</a>
+    </p>
+  </footer>
+</body>
+</html>
